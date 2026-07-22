@@ -1,0 +1,2 @@
+.risk-high { color: var(--danger); font-weight: 700; }
+.risk-medium { color: var(--warning); font-weight: 700; }
