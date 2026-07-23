@@ -39,6 +39,14 @@ As listagens podem retornar um array diretamente ou um objeto com o array em `da
 
 O ponto no rodapé lateral fica verde quando o backend responde e vermelho quando está indisponível. A verificação é repetida a cada 15 segundos.
 
+## Organização do código
+
+- `src/componentes`: componentes reutilizáveis da interface.
+- `src/dados`: configurações dos módulos e formulários.
+- `src/paginas`: páginas completas da aplicação.
+- `src/servicos`: comunicação com o backend.
+- `css`: estilos gerais e estilos específicos de cada módulo.
+
 ## Rotas
 
 - `/visao-geral`

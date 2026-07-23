@@ -1,18 +1,18 @@
-.metrics-grid {
+.grade-indicadores {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 16px;
   margin-bottom: 26px;
 }
 
-.metric-card {
+.cartao-indicador {
   position: relative;
   min-height: 136px;
   padding: 21px;
   overflow: hidden;
 }
 
-.metric-card::after {
+.cartao-indicador::after {
   position: absolute;
   top: -18px;
   right: -18px;
@@ -23,27 +23,27 @@
   content: "";
 }
 
-.metric-label {
+.rotulo-indicador {
   margin: 0 0 12px;
-  color: var(--muted);
+  color: var(--texto-suave);
   font-size: 12px;
   font-weight: 600;
 }
 
-.metric-value {
+.valor-indicador {
   margin: 0;
   font-size: 25px;
   font-weight: 700;
   letter-spacing: -0.04em;
 }
 
-.metric-note {
+.observacao-indicador {
   margin: 8px 0 0;
-  color: var(--muted);
+  color: var(--texto-suave);
   font-size: 11px;
 }
 
-.section-heading {
+.cabecalho-secao {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
@@ -51,32 +51,32 @@
   padding: 20px 22px 16px;
 }
 
-.section-heading h2 {
+.cabecalho-secao h2 {
   margin: 0;
   font-size: 17px;
 }
 
-.section-heading p {
+.cabecalho-secao p {
   margin: 5px 0 0;
-  color: var(--muted);
+  color: var(--texto-suave);
   font-size: 12px;
 }
 
-.section-link {
-  color: var(--primary-dark);
+.link-secao {
+  color: var(--cor-principal-escura);
   font-size: 12px;
   font-weight: 600;
   text-decoration: none;
 }
 
 @media (max-width: 1120px) {
-  .metrics-grid {
+  .grade-indicadores {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
 @media (max-width: 520px) {
-  .metrics-grid {
+  .grade-indicadores {
     grid-template-columns: 1fr;
   }
 }
