@@ -175,11 +175,6 @@ button {
   box-shadow: 0 0 0 4px rgba(0, 217, 126, 0.14);
 }
 
-.backend-status.mock .connection-dot {
-  background: #f2b84b;
-  box-shadow: 0 0 0 4px rgba(242, 184, 75, 0.14);
-}
-
 .page {
   min-width: 0;
   padding: 52px clamp(28px, 5vw, 76px) 48px;

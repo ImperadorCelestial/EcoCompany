@@ -76,12 +76,12 @@ export default function Layout({ children }) {
           </nav>
 
           <div
-            className={`backend-status${api.isMock ? " mock" : online ? " online" : ""}`}
+            className={`backend-status${online ? " online" : ""}`}
             aria-live="polite"
-            title={api.isMock ? "Os dados estão sendo mantidos em memória para testes" : online ? `Conectado a ${api.baseUrl}` : `Sem resposta de ${api.baseUrl}`}
+            title={online ? `Conectado a ${api.baseUrl}` : `Sem resposta de ${api.baseUrl}`}
           >
             <span className="connection-dot" aria-hidden="true" />
-            <span>{api.isMock ? "Modo de teste local" : online ? "Backend conectado" : "Backend desconectado"}</span>
+            <span>{online ? "Backend conectado" : "Backend desconectado"}</span>
           </div>
         </aside>
 

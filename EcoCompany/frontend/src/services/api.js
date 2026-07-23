@@ -1,5 +1,3 @@
-import { mockStore } from "../data/mockData";
-
 const API_BASE_URL = (
   window.localStorage.getItem("ecocompany_api_url") ||
   import.meta.env.VITE_API_URL ||
@@ -7,7 +5,6 @@ const API_BASE_URL = (
 ).replace(/\/$/, "");
 
 const REQUEST_TIMEOUT = 6000;
-const USE_MOCK_DATA = String(import.meta.env.VITE_USE_MOCK_DATA ?? "true").toLowerCase() !== "false";
 
 function emitConnection(online) {
   window.dispatchEvent(new CustomEvent("ecocompany:connection", {
@@ -55,12 +52,7 @@ function toArray(payload) {
 
 export const api = {
   baseUrl: API_BASE_URL,
-  isMock: USE_MOCK_DATA,
   async checkConnection() {
-    if (USE_MOCK_DATA) {
-      emitConnection(true);
-      return true;
-    }
     try {
       await request("/health");
       return true;
@@ -70,19 +62,15 @@ export const api = {
     }
   },
   async list(resource) {
-    if (USE_MOCK_DATA) return mockStore.list(resource);
     return toArray(await request(`/api/${resource}`));
   },
   create(resource, data) {
-    if (USE_MOCK_DATA) return mockStore.create(resource, data);
     return request(`/api/${resource}`, { method: "POST", body: JSON.stringify(data) });
   },
   update(resource, id, data) {
-    if (USE_MOCK_DATA) return mockStore.update(resource, id, data);
     return request(`/api/${resource}/${encodeURIComponent(id)}`, { method: "PUT", body: JSON.stringify(data) });
   },
   remove(resource, id) {
-    if (USE_MOCK_DATA) return mockStore.remove(resource, id);
     return request(`/api/${resource}/${encodeURIComponent(id)}`, { method: "DELETE" });
   }
 };
