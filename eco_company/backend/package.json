@@ -6,12 +6,17 @@
   "scripts": {
     "dev": "node --watch src/servidor.js",
     "start": "node src/servidor.js",
-    "check": "node --check src/servidor.js"
+    "check": "node --check src/servidor.js",
+    "test": "node --test",
+    "test:watch": "node --test --watch"
   },
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^17.2.3",
     "express": "^5.2.1",
     "mysql2": "^3.16.0"
+  },
+  "devDependencies": {
+    "supertest": "^7.2.2"
   }
 }
