@@ -1,2 +1,2 @@
-.risco-alto { color: var(--perigo); font-weight: 700; }
-.risco-medio { color: var(--aviso); font-weight: 700; }
+.risco-alto { color: var(--perigo); font-weight: 600; }
+.risco-medio { color: var(--aviso); font-weight: 600; }

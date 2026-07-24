@@ -37,6 +37,7 @@ async function fazerRequisicao(caminho, opcoes = {}) {
     if (!resposta.ok) {
       const dadosErro = await resposta.json().catch(() => ({}));
       throw new Error(
+        dadosErro.mensagem ||
         dadosErro.message ||
         dadosErro.error ||
         `Erro ${resposta.status} ao acessar o servidor.`

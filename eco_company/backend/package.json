@@ -1,0 +1,17 @@
+{
+  "name": "ecocompany-backend",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch src/servidor.js",
+    "start": "node src/servidor.js",
+    "check": "node --check src/servidor.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "mysql2": "^3.16.0"
+  }
+}

@@ -2,6 +2,8 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
 import Aplicacao from "./Aplicacao";
+import "@fontsource/genos/latin-400.css";
+import "@fontsource/genos/latin-600.css";
 import "../css/base.css";
 import "../css/visao-geral.css";
 import "../css/maquinas.css";

@@ -29,7 +29,8 @@ body {
   margin: 0;
   color: var(--texto);
   background: var(--fundo);
-  font-family: "Segoe UI", Arial, sans-serif;
+  font-family: "Genos", "Segoe UI", sans-serif;
+  font-weight: 400;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -85,7 +86,7 @@ botao {
   color: #072719;
   background: var(--cor-principal);
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: -0.04em;
 }
 
@@ -96,7 +97,7 @@ botao {
 
 .texto-marca strong {
   font-size: 17px;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: -0.02em;
 }
 
@@ -144,7 +145,7 @@ botao {
   place-items: center;
   color: var(--cor-principal);
   font-size: 13px;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .status-backend {
@@ -197,7 +198,7 @@ botao {
   margin: 0 0 8px;
   color: var(--cor-principal-escura);
   font-size: 11px;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: 0.12em;
   text-transform: uppercase;
 }
@@ -347,7 +348,7 @@ h1 {
   color: var(--texto-suave);
   background: var(--superficie-suave);
   font-size: 10px;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: 0.06em;
   text-align: left;
   text-transform: uppercase;
